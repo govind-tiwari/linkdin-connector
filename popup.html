@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LinkedIn Connector</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+      width: 220px;
+    }
+    
+    h3 {
+      font-size: 18px;
+      color: #0073b1;
+      margin-bottom: 20px;
+    }
+    
+    .btn {
+      display: inline-block;
+      background-color: #0073b1;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .btn:hover {
+      background-color: #005582;
+    }
+
+    #note-container {
+      text-align: left;
+      margin: 10px 0;
+    }
+
+    .footer {
+      font-size: 12px;
+      color: #888;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h3>LinkedIn Connector</h3>
+  <div id="note-container">
+    <input type="checkbox" id="addNoteCheckbox">
+    <label for="addNoteCheckbox">Send with Note</label><br>
+    <textarea id="noteMessage" placeholder="Enter your note here" rows="3" style="width:100%; margin-top: 5px; display:none;"></textarea>
+  </div>
+  <button id="startStopBtn" class="btn">Start Connecting</button>
+  <p id="timer" style="font-size: 14px; color: #555; margin-top: 10px;"></p>
+  <div class="footer">Automate LinkedIn connections</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
